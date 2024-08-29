@@ -130,9 +130,9 @@ button:hover {
     color: var(--main-color);
 }
 .hero_info p{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
-    font-weight: 200;
+    font-weight: 350;
 }
 .hero_info .social_icons{
     margin-bottom: 30px;
