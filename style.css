@@ -43,6 +43,7 @@ header {
   border-bottom: 2px solid var(--main-color);
 }
 
+
 .logo h2 {
   color: #fff;
   font-size: 30px;
@@ -116,6 +117,8 @@ button:hover {
 /* Hero Section */
 .hero_wrapper {
   min-height: 100vh;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .hero {
@@ -253,6 +256,7 @@ button:hover {
     width: 1500px;
     color: #fff;
     align-items: center;
+    margin-top: 0;
 }
 .education h2{
     font-size: 50px;
@@ -713,17 +717,27 @@ footer p span {
     left: 0;
     width: 100%;
     flex-direction: column;
-    background-color: #fff;
+    background-color: transparent;
     height: 0;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }
   nav p {
-    color: #000;
+    color: #fff;
   }
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2{
+    font-size: 25px;
+}
   .show {
     height: 280px;
     padding: 30px;
+    background-color: #000;
   }
   .services_card {
     width: 90%;
@@ -742,6 +756,15 @@ footer p span {
 }
 
 @media (max-width: 768px) {
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2{
+    font-size: 20px;
+}
   .hero_info h1 {
     font-size: 40px;
   }
