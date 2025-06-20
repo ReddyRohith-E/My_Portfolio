@@ -15,7 +15,7 @@ I am currently pursuing a degree in B.Tech from MITS, where I am delving into Co
 My technical toolkit includes languages and frameworks like C, C++, Java, Python, React, Node, Express, etc. I'm always eager to learn.
 
 ## Projects
-To be added very soon.
+This section highlights some of my notable projects, including web applications and software solutions that demonstrate my coding abilities and problem-solving skills.
 
 ## Contact Details
 I'm open to opportunities and collaborations. Feel free to reach out to me at e.reddyrohith2004@gmail.com, connect with me on LinkedIn, or follow me on Instagram.
