@@ -1,5 +1,5 @@
 /* Black Panther theme */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* General Styles */
 * {
   padding: 0;
@@ -42,7 +42,6 @@ header {
   background-color: #000000;
   border-bottom: 2px solid var(--main-color);
 }
-
 
 .logo h2 {
   color: #fff;
@@ -159,22 +158,22 @@ button:hover {
 }
 
 .hero_info p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: justify;
-    font-weight: 500;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero_info i {
-    font-size: 24px;
-    color: var(--main-color);
-    margin: 20px 0;
-    display: block;
-    text-align: center;
-  }
+  font-size: 24px;
+  color: var(--main-color);
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+}
 
 .hero_info .social_icons {
   margin-bottom: 30px;
@@ -196,22 +195,22 @@ button:hover {
 }
 
 .hero_info .social_icons i {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    border: 1px solid var(--main-color);
-    border-radius: 50%;
-    transition: all 0.3s;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  transition: all 0.3s;
 }
 
 .hero_info .social_icons i:hover {
-    background-color: var(--main-color);
-    color: #000;
-    transform: scale(1.3) translateY(-5px);
-    box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+  color: #000;
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px var(--main-color);
 }
 
 .hero_img {
@@ -232,6 +231,40 @@ button:hover {
   animation: glowing 3s linear infinite;
 }
 
+#resumeModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+#resumeModal.active {
+  display: flex;
+}
+#resumeModal .modal-content {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 280px;
+  max-width: 90vw;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+#resumeModal button {
+  margin-top: 16px;
+  padding: 8px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @keyframes glowing {
   0% {
     box-shadow: 0 0 20px var(--main-color);
@@ -249,82 +282,81 @@ button:hover {
 }
 
 /* Education Section */
-.education{
-    display: flex;
-    flex-direction: column;
-    padding: 80px 0;
-    width: 1500px;
-    color: #fff;
-    align-items: center;
-    margin-top: 0;
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  width: 1500px;
+  color: #fff;
+  align-items: center;
+  margin-top: 0;
 }
-.education h2{
-    font-size: 50px;
-    margin-bottom: 50px;
+.education h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
 }
-.timeline_box{
-    width: 30%;
-    border: 2px solid var(--main-color);
-    border-radius: 100px;
-    padding: 20px 50px;
-    position: relative;
-    margin-top: 40px;
-    box-shadow: 0 0 10px var(--main-color);
-    transition: all .4s ease-in-out;
+.timeline_box {
+  width: 30%;
+  border: 2px solid var(--main-color);
+  border-radius: 100px;
+  padding: 20px 50px;
+  position: relative;
+  margin-top: 40px;
+  box-shadow: 0 0 10px var(--main-color);
+  transition: all 0.4s ease-in-out;
 }
-.timeline_box:hover{
-    box-shadow: 0 0 50px var(--main-color);
-}
-
-.timeline{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-}
-.timeline:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    background-color: var(--main-color);
+.timeline_box:hover {
+  box-shadow: 0 0 50px var(--main-color);
 }
 
-.timeline_box h3{
-    margin-bottom: 20px;
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
 }
-.timeline_box span{
-    color: var(--main-color);
-    font-size: 20px;
-}
-.timeline .left{
-    margin-left: 18%;
-    text-align: right;
-}
-.timeline .right{
-   margin-left: 52%;
-}
-
-.timeline .left:after,.timeline .right:after {
-
-    position: absolute;
-    content: "";
-    top: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    box-shadow: 0 0 50px var(--main-color);
-}
-.timeline .left:after{
-    right: -9.5%;
-}
-.timeline .right:after{
-    left: -8.5%;
+.timeline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: var(--main-color);
 }
 
+.timeline_box h3 {
+  margin-bottom: 20px;
+}
+.timeline_box span {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.timeline .left {
+  margin-left: 18%;
+  text-align: right;
+}
+.timeline .right {
+  margin-left: 52%;
+}
+
+.timeline .left:after,
+.timeline .right:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  box-shadow: 0 0 50px var(--main-color);
+}
+.timeline .left:after {
+  right: -9.5%;
+}
+.timeline .right:after {
+  left: -8.5%;
+}
 
 /* Skills Section */
 .skills {
@@ -725,15 +757,15 @@ footer p span {
   nav p {
     color: #fff;
   }
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+  }
 
-.logo h2{
+  .logo h2 {
     font-size: 25px;
-}
+  }
   .show {
     height: 280px;
     padding: 30px;
@@ -756,15 +788,15 @@ footer p span {
 }
 
 @media (max-width: 768px) {
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+  }
 
-.logo h2{
+  .logo h2 {
     font-size: 20px;
-}
+  }
   .hero_info h1 {
     font-size: 40px;
   }
@@ -772,10 +804,10 @@ footer p span {
     font-size: 20px;
   }
   .hero_info p {
-        font-size: 18px;
-        padding: 10px;
-        font-weight: 500;
-      }
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+  }
   .timeline_box {
     width: 100%;
   }
