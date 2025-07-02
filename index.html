@@ -130,55 +130,11 @@
         <div class="project_main" id="Projects">
             <h2>Projects</h2>
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="project_sec">
-                            <h4></h4>
-                            <p></p>
-                            <div class="project_user">
-                                <img src="" alt="">
-                                <div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project_sec">
-                            <p></p>
-                            <div class="project_user">
-                                <img src="" alt="">
-                                <div>
-                                    <h4></h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project_sec">
-                            <p></p>
-                            <div class="project_user">
-                                <img src="" alt="">
-                                <div>
-                                    <h4></h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project_sec">
-                            <p></p>
-                            <div class="project_user">
-                                <img src="" alt="">
-                                <div>
-                                    <h4></h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-wrapper" id="projectsContainer">
+                    <!-- Projects will be loaded dynamically -->
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -264,12 +220,165 @@
             </a>
 
         </div>
-        <p>Copyright © 2024 @<span>ReddyRohith</span>. All Rights Reserved.</p>
+        <p>Copyright © 2025 @<span>ReddyRohith</span>. All Rights Reserved.</p>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        // Load projects from JSON file
+        async function loadProjects() {
+            try {
+                const response = await fetch('assets/projects.json');
+                const data = await response.json();
+                const projectsContainer = document.getElementById('projectsContainer');
+                
+                data.projects.forEach(project => {
+                    const projectSlide = document.createElement('div');
+                    projectSlide.className = 'swiper-slide';
+                    
+                    const techTags = project.technologies.map(tech => 
+                        `<span class="tech-tag">${tech}</span>`
+                    ).join('');
+                    
+                    // Conditionally show Live Demo button only if link is not "#"
+                    const liveDemoButton = project.liveDemo !== "#" ? 
+                        `<a href="${project.liveDemo}" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>` : '';
+                    
+                    projectSlide.innerHTML = `
+                        <div class="project_sec">
+                            <h4>${project.title}</h4>
+                            <p>${project.description}</p>
+                            <div class="project_tech">
+                                ${techTags}
+                            </div>
+                            <div class="project_links">
+                                <a href="${project.github}" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                ${liveDemoButton}
+                            </div>
+                        </div>
+                    `;
+                    
+                    projectsContainer.appendChild(projectSlide);
+                });
+                
+                // Initialize Swiper after projects are loaded
+                initializeSwiper();
+            } catch (error) {
+                console.error('Error loading projects:', error);
+            }
+        }
+
+        // Initialize Swiper
+        function initializeSwiper() {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                    dynamicMainBullets: 1,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '" data-slide="' + index + '"></span>';
+                    },
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                            dynamicBullets: true,
+                            dynamicMainBullets: 1,
+                        },
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                            dynamicBullets: true,
+                            dynamicMainBullets: 2,
+                        },
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                            dynamicBullets: true,
+                            dynamicMainBullets: 3,
+                        },
+                    },
+                },
+                on: {
+                    init: function() {
+                        updatePaginationDots(this);
+                    },
+                    resize: function() {
+                        updatePaginationDots(this);
+                    },
+                    breakpoint: function() {
+                        updatePaginationDots(this);
+                    }
+                }
+            });
+
+            // Additional hover controls for better UX
+            const swiperContainer = document.querySelector('.mySwiper');
+            
+            swiperContainer.addEventListener('mouseenter', () => {
+                swiper.autoplay.stop();
+            });
+
+            swiperContainer.addEventListener('mouseleave', () => {
+                swiper.autoplay.start();
+            });
+        }
+
+        // Function to update pagination dots based on slides per view
+        function updatePaginationDots(swiper) {
+            const totalSlides = swiper.slides.length;
+            const slidesPerView = swiper.params.slidesPerView;
+            const paginationEl = swiper.pagination.el;
+            
+            if (paginationEl && totalSlides > 0) {
+                // Calculate the number of pagination dots needed
+                const dotsNeeded = Math.ceil(totalSlides / slidesPerView);
+                
+                // Update dynamic bullets based on current slidesPerView
+                if (window.innerWidth < 768) {
+                    // Mobile: 1 slide per view
+                    swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 5);
+                } else if (window.innerWidth < 1200) {
+                    // Tablet: 2 slides per view
+                    swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 3);
+                } else {
+                    // Desktop: 3 slides per view
+                    swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 2);
+                }
+                
+                // Re-initialize pagination if needed
+                if (swiper.pagination.initialized) {
+                    swiper.pagination.update();
+                }
+            }
+        }
+
         let navbar = document.querySelector("#navbar")
 
         window.addEventListener("scroll", () => {
@@ -295,33 +404,14 @@
             })
         })
 
-
         var typed = new Typed('#element', {
             strings: ['a Self-learner.', 'an aspiring Tech Undergrad.', 'a Web Developer.',],
             typeSpeed: 80,
             loop: true
         });
 
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: true,
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                },
-            },
-        });
+        // Load projects when page loads
+        document.addEventListener('DOMContentLoaded', loadProjects);
     </script>
 </body>
 

@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Website",
+      "description": "A full-stack e-commerce platform built with React.js and Node.js. Features include user authentication, product catalog, shopping cart, and payment integration. Implemented responsive design and modern UI/UX principles.",
+      "technologies": ["React.js", "Node.js", "MongoDB", "Express.js"],
+      "github": "https://github.com/ReddyRohith-E",
+      "liveDemo": "#"
+    },
+    {
+      "id": 2,
+      "title": "Portfolio Website",
+      "description": "A responsive personal portfolio website showcasing my skills, projects, and experience. Built with HTML5, CSS3, and JavaScript. Features smooth animations, contact form integration, and modern design.",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "EmailJS"],
+      "github": "https://github.com/ReddyRohith-E/My_Portfolio",
+      "liveDemo": "https://rohith-pavilion.netlify.app/"
+    },
+    {
+      "id": 3,
+      "title": "Task Management App",
+      "description": "A web-based task management application with features like task creation, editing, categorization, and deadline tracking. Built with modern JavaScript frameworks and local storage for data persistence.",
+      "technologies": ["JavaScript", "HTML/CSS", "Local Storage", "Bootstrap"],
+      "github": "https://github.com/ReddyRohith-E",
+      "liveDemo": "#"
+    },
+    {
+      "id": 4,
+      "title": "Weather Dashboard",
+      "description": "A dynamic weather application that displays current weather conditions and forecasts. Integrated with weather APIs, features location-based weather data, and responsive design for mobile and desktop.",
+      "technologies": ["JavaScript", "Weather API", "CSS3", "Responsive"],
+      "github": "https://github.com/ReddyRohith-E",
+      "liveDemo": "#"
+    }
+  ]
+}
