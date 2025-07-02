@@ -502,15 +502,13 @@ button:hover {
   justify-content: center;
   align-items: stretch;
 }
-
-
 .project_sec {
   border: 1px solid var(--main-color);
   padding: 30px;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
-  min-height: 0;
-  height: auto;
+  min-height: 420px;
+  height: 100%;
   max-width: 420px;
   width: 100%;
   display: flex;
@@ -522,13 +520,47 @@ button:hover {
   box-sizing: border-box;
 }
 
+/* Swiper Pagination Styles - Clear and Visible Dots */
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 10;
+}
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  opacity: 0.5;
+  border: 2px solid var(--main-color);
+  margin: 0 6px !important;
+  border-radius: 50%;
+  transition: background 0.3s, opacity 0.3s, border 0.3s;
+  box-shadow: 0 0 8px var(--main-color), 0 0 2px #fff;
+}
+.swiper-pagination-bullet-active {
+  background: var(--main-color);
+  opacity: 1;
+  border: 2px solid #fff;
+  box-shadow: 0 0 16px var(--main-color), 0 0 4px #fff;
+  animation: pulseGlow 1.2s infinite;
+}
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 16px var(--main-color), 0 0 4px #fff; }
+  50% { box-shadow: 0 0 32px var(--main-color), 0 0 8px #fff; }
+  100% { box-shadow: 0 0 16px var(--main-color), 0 0 4px #fff; }
+}
+
+
+
 .project_sec:hover {
   border: 2px solid var(--main-color);
   border-radius: 15px;
   box-shadow: 
     0 0 25px rgba(98, 98, 255, 0.4),
     inset 0 1px 0 rgba(98, 98, 255, 0.3);
-  transform: translateY(2px);
+    transform: translateY(2px);
   background: linear-gradient(135deg, rgba(98, 98, 255, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 
@@ -602,9 +634,11 @@ button:hover {
   display: flex;
   gap: clamp(10px, 2vw, 15px);
   flex-wrap: wrap;
-  margin: auto;
+  justify-content: flex-start;
+  margin: 0;
 }
 
+  
 .project-link {
   display: inline-flex;
   align-items: center;
@@ -616,19 +650,24 @@ button:hover {
   text-decoration: none;
   border-radius: 25px;
   font-size: clamp(13px, 1.5vw, 15px);
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
-
-.project-link:hover {
-  background-color: var(--main-color);
+.project-link:hover, .project-link:focus {
+  background: linear-gradient(135deg, var(--main-color) 0%, #4a4aff 100%);
   color: #000;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(98, 98, 255, 0.3);
+  text-decoration: none;
+  box-shadow: transparent;
+  outline: none;
+  transform: scale(0.95);
 }
-
-.project-link i {
-  font-size: 14px;
+.project-link:hover i, .project-link:focus i {
+  color: #000;
+  transition: color 0.3s;
 }
 
 /* Contact Section */
@@ -929,7 +968,7 @@ footer p span {
   background: linear-gradient(135deg, rgba(98, 98, 255, 0.2) 0%, rgba(98, 98, 255, 0.4) 100%);
   border: 2px solid rgba(98, 98, 255, 0.5);
   border-radius: 50%;
-  margin: 0 8px;
+  margin: 0 10px;
   opacity: 1;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -950,13 +989,15 @@ footer p span {
   transition: all 0.4s ease-out;
   opacity: 0;
 }
-
-.swiper-pagination-bullet:hover::before {
-  width: 200%;
-  height: 200%;
-  opacity: 0.3;
+  
+.swiper-pagination-bullet:hover::before,
+.swiper-pagination-bullet:focus::before {
+  width: 220%;
+  height: 220%;
+  opacity: 0.35;
 }
 
+/* Active dot - more visible */
 .swiper-pagination-bullet-active {
   background: linear-gradient(135deg, var(--main-color) 0%, #4a4aff 100%);
   border: 2px solid var(--main-color);
@@ -967,7 +1008,7 @@ footer p span {
     inset 0 2px 4px rgba(255, 255, 255, 0.2);
   animation: pulseGlow 2s infinite ease-in-out;
 }
-
+  
 .swiper-pagination-bullet-active::before {
   width: 100%;
   height: 100%;
@@ -975,6 +1016,7 @@ footer p span {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
 }
 
+/* Dot hover - more visible */
 .swiper-pagination-bullet:hover {
   background: linear-gradient(135deg, rgba(98, 98, 255, 0.8) 0%, var(--main-color) 100%);
   border: 2px solid var(--main-color);
@@ -994,7 +1036,6 @@ footer p span {
     inset 0 2px 6px rgba(255, 255, 255, 0.3);
   border: 3px solid rgba(255, 255, 255, 0.4);
 }
-
 .swiper-pagination-bullet-active-prev,
 .swiper-pagination-bullet-active-next {
   background: linear-gradient(135deg, rgba(98, 98, 255, 0.7) 0%, rgba(98, 98, 255, 0.9) 100%);
@@ -1097,8 +1138,8 @@ footer p span {
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .project_sec {
-    min-height: 0;
-    height: auto;
+    min-height: 300px;
+    height: 100%;
     max-width: 400px;
     padding: 18px;
   }
@@ -1224,8 +1265,8 @@ footer p span {
     margin-left: 0;
   }
   .project_sec {
-    min-height: 0;
-    height: auto;
+    min-height: 220px;
+    height: 240px;
     max-width: 350px;
     width: 100%;
     padding: 12px;
@@ -1234,6 +1275,7 @@ footer p span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: stretch;
   }
   .project_sec h4 {
     font-size: clamp(18px, 3vw, 20px);
@@ -1270,6 +1312,13 @@ footer p span {
     margin-top: 25px;
     padding: 10px;
     border-radius: 20px;
+    gap: 12px;
+  }
+  .swiper-pagination .swiper-nav-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 4px;
   }
   .swiper-pagination-bullet {
     width: 10px;
@@ -1324,8 +1373,8 @@ footer p span {
   }
   /* Enhanced mobile project card responsiveness */
   .project_sec {
-    min-height: 0;
-    height: auto;
+    min-height: 180px;
+    height: 180px;
     max-width: 320px;
     width: 100%;
     padding: 8px;
@@ -1334,6 +1383,7 @@ footer p span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: stretch;
   }
   .project_sec h4 {
     font-size: clamp(16px, 4vw, 18px);

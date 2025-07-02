@@ -145,8 +145,16 @@
                 <div class="swiper-wrapper" id="projectsContainer">
                     <!-- Projects will be loaded dynamically -->
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <!-- Add Pagination and Navigation Buttons -->
+                <div class="swiper-pagination">
+                  <button class="swiper-nav-btn swiper-button-prev" aria-label="Previous project" type="button">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <!-- Swiper dots will be injected here by Swiper JS -->
+                  <button class="swiper-nav-btn swiper-button-next" aria-label="Next project" type="button">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
             </div>
         </div>
     </section>
@@ -325,10 +333,18 @@
                     el: '.swiper-pagination',
                     clickable: true,
                     dynamicBullets: true,
-                    dynamicMainBullets: 1,
+                    dynamicMainBullets: 2,
                     renderBullet: function (index, className) {
                         return '<span class="' + className + '" data-slide="' + index + '"></span>';
                     },
+                    // Place bullets between nav buttons
+                    bulletClass: 'swiper-pagination-bullet',
+                    bulletActiveClass: 'swiper-pagination-bullet-active',
+                    // Swiper will inject bullets as direct children
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
                 breakpoints: {
                     0: {
@@ -389,30 +405,16 @@
 
         // Function to update pagination dots based on slides per view
         function updatePaginationDots(swiper) {
-            const totalSlides = swiper.slides.length;
-            const slidesPerView = swiper.params.slidesPerView;
-            const paginationEl = swiper.pagination.el;
-            
-            if (paginationEl && totalSlides > 0) {
-                // Calculate the number of pagination dots needed
-                const dotsNeeded = Math.ceil(totalSlides / slidesPerView);
-                
-                // Update dynamic bullets based on current slidesPerView
-                if (window.innerWidth < 768) {
-                    // Mobile: 1 slide per view
-                    swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 5);
-                } else if (window.innerWidth < 1200) {
-                    // Tablet: 2 slides per view
-                    swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 3);
-                } else {
-                    // Desktop: 3 slides per view
-                    swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 2);
-                }
-                
-                // Re-initialize pagination if needed
-                if (swiper.pagination.initialized) {
-                    swiper.pagination.update();
-                }
+            // Swiper handles dynamic bullets, but we ensure clarity and correct count
+            if (!swiper.pagination || !swiper.pagination.el) return;
+            const totalSlides = swiper.slides.length - (swiper.loopedSlides ? swiper.loopedSlides * 2 : 0); // exclude duplicated slides
+            let slidesPerView = 1;
+            if (window.innerWidth >= 1200) slidesPerView = 3;
+            else if (window.innerWidth >= 768) slidesPerView = 2;
+            const dotsNeeded = Math.ceil(totalSlides / slidesPerView);
+            swiper.params.pagination.dynamicMainBullets = Math.min(dotsNeeded, 5);
+            if (swiper.pagination.initialized) {
+                swiper.pagination.update();
             }
         }
 
