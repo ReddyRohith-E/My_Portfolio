@@ -2,129 +2,113 @@
   "projects": [
     {
       "id": 1,
-      "title": "HOPIRE Tech Solutions LLP",
-      "description": "A dynamic web project built primarily with JavaScript and CSS. Features modern UI design and interactive components. Suitable for scalable web applications.",
-      "technologies": ["JavaScript", "CSS", "HTML"],
-      "github": "https://github.com/ReddyRohith-E/HOPIRE",
-      "liveDemo": "https://hopire.tech/"
+      "title": "ICOTL",
+      "description": "A dynamic website for the International Conference at MITS, built with React, Node.js, and Express.js for interactive online learning and event management.",
+      "technologies": ["React", "Node.js", "Express.js", "JavaScript", "HTML & CSS"],
+      "github": "https://github.com/ReddyRohith-E/ICOTL",
+      "liveDemo": "https://icotl.in/"
     },
     {
       "id": 2,
-      "title": "MITS Foundation",
-      "description": "A responsive website for MITS Foundation. Includes information pages, event highlights, and contact forms. Focuses on accessibility and clean UI.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/Karthik70904/MITS-Foundation",
-      "liveDemo": "https://mitsfoundation.org/"
-    },
-    {
-      "id": 3,
-      "title": "Green Valley School",
-      "description": "A web presence for Green Valley School with student, teacher, and event modules. Emphasizes modularity and ease of navigation.",
-      "technologies": ["CSS", "HTML", "JavaScript"],
-      "github": "https://github.com/Karthik70904/Green-Valley-School",
-      "liveDemo": "#"
-    },
-    {
-      "id": 4,
-      "title": "Ashv-2k25",
-      "description": "A modern event management platform tailored for Ashv-2k25. Features schedule displays and registration forms.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
-      "github": "https://github.com/MaheshKumar1533/Ashv-2k25",
-      "liveDemo": "#"
-    },
-    {
-      "id": 5,
-      "title": "Collage Event Manager",
-      "description": "A platform for managing college events. Includes event creation, registration, and notifications.",
-      "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
-      "github": "https://github.com/bhavani-prakash/Collage-event-manager",
-      "liveDemo": "#"
-    },
-    {
-      "id": 6,
-      "title": "FreshersDay_2k24",
-      "description": "A dedicated site for Freshers Day 2k24. Supports schedule publishing and multimedia galleries.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
-      "github": "https://github.com/ReddyRohith-E/FreshersDay_2k24",
-      "liveDemo": "#"
-    },
-    {
-      "id": 7,
-      "title": "WebClub2024-2025",
-      "description": "Website for the Web Club. Contains club events, member showcase, and learning resources.",
-      "technologies": ["CSS", "HTML", "JavaScript"],
-      "github": "https://github.com/ReddyRohith-E/WebClub2024-2025",
-      "liveDemo": "#"
-    },
-    {
-      "id": 8,
-      "title": "ashv2k24",
-      "description": "A digital event platform for ashv2k24. Integrates schedules, registration, and event announcements.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
-      "github": "https://github.com/Bharath8978/ashv2k24",
-      "liveDemo": "#"
-    },
-    {
-      "id": 9,
-      "title": "GMOCS-2K25",
-      "description": "A comprehensive platform for managing GMOCS-2K25 events. Includes Python backend scripts for automation.",
-      "technologies": ["HTML", "Python", "CSS", "JavaScript"],
-      "github": "https://github.com/HarshaVardhanRao/GMOCS-2K25",
-      "liveDemo": "#"
-    },
-    {
-      "id": 10,
-      "title": "MITS_Hackathon",
-      "description": "Website for MITS Hackathon. Features team registration, event updates, and results.",
-      "technologies": ["CSS", "JavaScript", "HTML"],
-      "github": "https://github.com/ReddyRohith-E/MITS_Hackathon",
-      "liveDemo": "#"
-    },
-    {
-      "id": 11,
-      "title": "Weather_App",
-      "description": "A weather dashboard displaying real-time conditions and forecasts using weather APIs.",
-      "technologies": ["JavaScript", "CSS", "HTML"],
-      "github": "https://github.com/ReddyRohith-E/Weather_App",
-      "liveDemo": "#"
-    },
-    {
-      "id": 12,
-      "title": "My_Portfolio",
-      "description": "A responsive portfolio showcasing skills, projects, and experiences. Modern design and smooth animations.",
-      "technologies": ["CSS", "HTML"],
-      "github": "https://github.com/ReddyRohith-E/My_Portfolio",
-      "liveDemo": "https://rohith-pavilion.netlify.app/"
-    },
-    {
-      "id": 13,
-      "title": "ICOTL",
-      "description": "A web project built with React, Node.js, and Express.js, designed for interactive online learning.",
-      "technologies": ["React", "Node.js", "Express.js", "JavaScript", "HTML & CSS"],
-      "github": "https://github.com/ReddyRohith-E/ICOTL",
-      "liveDemo": "#"
-    },
-    {
-      "id": 14,
       "title": "File Sharing App",
-      "description": "A file sharing application with a focus on ease of use and security. Built using Node.js, Express.js, React, and MongoDB. Modern JS interface.",
+      "description": "A file sharing web application built with the MERN stack, utilizing REST APIs to securely share files across a network. Emphasizes ease of use, modern JavaScript interface, and robust security for file transfers.",
       "technologies": ["Node.js", "Express.js", "React", "MongoDB", "JavaScript", "HTML & CSS"],
       "github": "https://github.com/ReddyRohith-E/File_Sharing_App",
       "liveDemo": "#"
     },
     {
-      "id": 15,
+      "id": 3,
+      "title": "HOPIRE Tech Solutions LLP",
+      "description": "A responsive startup landing page built with Vite + React, featuring dynamic form   handling via EmailJS. Styled using CSS for clarity and performance. Developed to reflect brand identity and ensure smooth user experience across devices.",
+      "technologies": ["React","JavaScript","CSS","EmailJS"],
+      "github": "https://github.com/ReddyRohith-E/HOPIRE",
+      "liveDemo": "https://hopire.tech/"
+    },
+    {
+      "id": 4,
+      "title": "GMOCS-2K25",
+      "description": "A full-featured event management platform for GMOCS-2K25, integrating a Django REST API backend for automation, secure data handling, and scalable operations. The frontend leverages React with Vite for fast, interactive user experiences, while real-time updates and admin tools streamline event coordination.",
+      "technologies": ["React", "Django", "CSS", "JavaScript"],
+      "github": "https://github.com/HarshaVardhanRao/GMOCS-2K25",
+      "liveDemo": "https://mits.ac.in/assets/pdf/cse/GMOCS%E2%80%992K25.pdf"
+    },
+    {
+      "id": 5,
+      "title": "Green Valley School",
+      "description": "A modular school site created using HTML, CSS, and JavaScript, featuring sections for students, teachers, and events. Prioritizes intuitive navigation and expandable structure.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/Karthik70904/Green-Valley-School",
+      "liveDemo": "https://green-valley-school-mpl.netlify.app/"
+    },
+    {
+      "id": 6,
+      "title": "Ashv 2k25",
+      "description": "A sleek event management platform for Ashv-2k25, built with HTML, CSS, and JavaScript. Includes schedules and registration forms, designed for modern engagement and usability.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "github": "https://github.com/Bharath8978/ashv2k24",
+      "liveDemo": "#"
+    },
+    {
+      "id": 7,
+      "title": "FreshersDay 2k24",
+      "description": "A dedicated site for Freshers Day 2k24. Supports schedules, event details, and registration. Built with HTML, CSS, and JavaScript for a modern user experience.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "github": "https://github.com/ReddyRohith-E/FreshersDay_2k24",
+      "liveDemo": "https://swagath-2k24.netlify.app/"
+    },
+    {
+      "id": 8,
+      "title": "Weather App",
+      "description": "A weather dashboard displaying real-time conditions and forecasts using weather APIs, with local storage management for user preferences and recent searches via JavaScript.",
+      "technologies": ["JavaScript", "CSS", "HTML"],
+      "github": "https://github.com/ReddyRohith-E/Weather_App",
+      "liveDemo": "#"
+    },
+    {
+      "id": 9,
+      "title": "My Portfolio",
+      "description": "A responsive portfolio showcasing skills, projects, and experiences. Built with JavaScript for fast performance, featuring modern design, smooth animations, and optimized asset loading.",
+      "technologies": ["CSS", "HTML", "JavaScript"],
+      "github": "https://github.com/ReddyRohith-E/My_Portfolio",
+      "liveDemo": "https://rohith-pavilion.netlify.app/"
+    },
+    {
+      "id": 10,
+      "title": "MITS Foundation",
+      "description": "A responsive website for MITS Foundation built with HTML, CSS, and JavaScript. Highlights events, provides contact options, and ensures accessibility across devices with a clean, user-focused UI.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/Karthik70904/MITS-Foundation",
+      "liveDemo": "https://mitsfoundation.org/"
+    },
+    {
+      "id": 11,
+      "title": "Innospark 2k24",
+      "description": "A comprehensive platform for MITS Hackathon 2k24, enabling seamless team registration, real-time event updates, result announcements, and interactive schedules. Built for scalability and user engagement with a modern, responsive UI.",
+      "technologies": ["TailwindCSS", "JavaScript", "HTML"],
+      "github": "https://github.com/ReddyRohith-E/MITS_Hackathon",
+      "liveDemo": "https://innospark-2024.netlify.app/"
+    },
+    {
+      "id": 12,
+      "title": "Collage Event Manager",
+      "description": "A platform for managing college events. Includes event creation, registration, and management features. Built with Node.js, Express.js, and MongoDB for backend functionality, and HTML, CSS, and JavaScript for the frontend.",
+      "technologies": ["Node.js", "Express.js", "MongoDB", "HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/bhavani-prakash/Collage-event-manager",
+      "liveDemo": "#"
+    },
+    {
+      "id": 13,
       "title": "Flex",
-      "description": "A project combining web and Python technologies, featuring dynamic layouts and scripting utilities.",
-      "technologies": ["JavaScript", "CSS", "Python", "HTML", "SCSS"],
+      "description": "A student performance tracking system that uses the LeetCode API to fetch and display coding progress and statistics based on username. Integrates web and Python technologies for dynamic layouts, scripting utilities, and real-time data visualization.",
+      "technologies": ["JavaScript", "CSS", "Django", "HTML", "SCSS"],
       "github": "https://github.com/HarshaVardhanRao/Flex",
       "liveDemo": "#"
     },
     {
-      "id": 16,
-      "title": "HopireK",
-      "description": "A hybrid project using Python and web tech, supporting both frontend and backend features.",
-      "technologies": ["JavaScript", "CSS", "HTML", "Python"],
+      "id": 14,
+      "title": "HopireK ",
+      "description": "An ERP platform for Hopire Tech, built with Django for the backend and React for the frontend. Supports comprehensive business process management, secure data handling, and a modern, responsive user interface.",
+      "technologies": ["Django", "React", "JavaScript", "Python", "CSS"],
       "github": "https://github.com/HarshaVardhanRao/HopireK",
       "liveDemo": "#"
     }
