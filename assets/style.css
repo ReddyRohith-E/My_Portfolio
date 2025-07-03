@@ -587,11 +587,17 @@ button:hover {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
-  overflow: hidden;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
   min-height: 6.4em;
   max-height: 6.4em;
   flex-shrink: 0;
   flex-grow: 1;
+}
+
+.project_sec p::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .project_tech {
@@ -601,10 +607,16 @@ button:hover {
   margin-bottom: clamp(16px, 2.5vw, 20px);
   min-height: 50px;
   max-height: 50px;
-  overflow: hidden;
+  overflow: auto;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
   align-content: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
+}
+
+.project_tech::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .project_sec {
