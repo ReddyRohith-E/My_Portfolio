@@ -4,7 +4,7 @@
       "id": 1,
       "title": "ICOTL",
       "description": "A dynamic website for the International Conference at MITS, built with React, Node.js, and Express.js for interactive online learning and event management.",
-      "technologies": ["React", "Node.js", "Express.js", "JavaScript", "HTML & CSS"],
+      "technologies": ["Node.js", "Express.js", "React", "JavaScript", "HTML & CSS"],
       "github": "https://github.com/ReddyRohith-E/ICOTL",
       "liveDemo": "https://icotl.in/"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "title": "File Sharing App",
       "description": "A file sharing web application built with the MERN stack, utilizing REST APIs to securely share files across a network. Emphasizes ease of use, modern JavaScript interface, and robust security for file transfers.",
-      "technologies": ["Node.js", "Express.js", "React", "MongoDB", "JavaScript", "HTML & CSS"],
+      "technologies": ["Node.js", "Express.js", "MongoDB", "React", "JavaScript", "HTML & CSS"],
       "github": "https://github.com/ReddyRohith-E/File_Sharing_App",
       "liveDemo": "#"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "title": "HOPIRE Tech Solutions LLP",
       "description": "A responsive startup landing page built with Vite + React, featuring dynamic form   handling via EmailJS. Styled using CSS for clarity and performance. Developed to reflect brand identity and ensure smooth user experience across devices.",
-      "technologies": ["React","JavaScript","CSS","EmailJS"],
+      "technologies": ["React", "JavaScript", "CSS", "EmailJS"],
       "github": "https://github.com/ReddyRohith-E/HOPIRE",
       "liveDemo": "https://hopire.tech/"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "title": "GMOCS-2K25",
       "description": "A full-featured event management platform for GMOCS-2K25, integrating a Django REST API backend for automation, secure data handling, and scalable operations. The frontend leverages React with Vite for fast, interactive user experiences, while real-time updates and admin tools streamline event coordination.",
-      "technologies": ["React", "Django", "CSS", "JavaScript"],
+      "technologies": ["Django", "React", "JavaScript", "CSS"],
       "github": "https://github.com/HarshaVardhanRao/GMOCS-2K25",
       "liveDemo": "https://mits.ac.in/assets/pdf/cse/GMOCS%E2%80%992K25.pdf"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "title": "Green Valley School",
       "description": "A modular school site created using HTML, CSS, and JavaScript, featuring sections for students, teachers, and events. Prioritizes intuitive navigation and expandable structure.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
+      "technologies": ["JavaScript", "HTML", "CSS"],
       "github": "https://github.com/Karthik70904/Green-Valley-School",
       "liveDemo": "https://green-valley-school-mpl.netlify.app/"
     },
@@ -60,7 +60,7 @@
       "id": 8,
       "title": "Weather App",
       "description": "A weather dashboard displaying real-time conditions and forecasts using weather APIs, with local storage management for user preferences and recent searches via JavaScript.",
-      "technologies": ["JavaScript", "CSS", "HTML"],
+      "technologies": ["JavaScript", "HTML", "CSS"],
       "github": "https://github.com/ReddyRohith-E/Weather_App",
       "liveDemo": "#"
     },
@@ -68,7 +68,7 @@
       "id": 9,
       "title": "My Portfolio",
       "description": "A responsive portfolio showcasing skills, projects, and experiences. Built with JavaScript for fast performance, featuring modern design, smooth animations, and optimized asset loading.",
-      "technologies": ["CSS", "HTML", "JavaScript"],
+      "technologies": ["JavaScript", "HTML", "CSS"],
       "github": "https://github.com/ReddyRohith-E/My_Portfolio",
       "liveDemo": "https://rohith-pavilion.netlify.app/"
     },
@@ -76,7 +76,7 @@
       "id": 10,
       "title": "MITS Foundation",
       "description": "A responsive website for MITS Foundation built with HTML, CSS, and JavaScript. Highlights events, provides contact options, and ensures accessibility across devices with a clean, user-focused UI.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
+      "technologies": ["JavaScript", "HTML", "CSS"],
       "github": "https://github.com/Karthik70904/MITS-Foundation",
       "liveDemo": "https://mitsfoundation.org/"
     },
@@ -84,7 +84,7 @@
       "id": 11,
       "title": "Innospark 2k24",
       "description": "A comprehensive platform for MITS Hackathon 2k24, enabling seamless team registration, real-time event updates, result announcements, and interactive schedules. Built for scalability and user engagement with a modern, responsive UI.",
-      "technologies": ["TailwindCSS", "JavaScript", "HTML"],
+      "technologies": ["JavaScript", "HTML", "TailwindCSS"],
       "github": "https://github.com/ReddyRohith-E/MITS_Hackathon",
       "liveDemo": "https://innospark-2024.netlify.app/"
     },
@@ -92,7 +92,7 @@
       "id": 12,
       "title": "Collage Event Manager",
       "description": "A platform for managing college events. Includes event creation, registration, and management features. Built with Node.js, Express.js, and MongoDB for backend functionality, and HTML, CSS, and JavaScript for the frontend.",
-      "technologies": ["Node.js", "Express.js", "MongoDB", "HTML", "CSS", "JavaScript"],
+      "technologies": ["Node.js", "Express.js", "MongoDB", "JavaScript", "HTML", "CSS"],
       "github": "https://github.com/bhavani-prakash/Collage-event-manager",
       "liveDemo": "#"
     },
@@ -100,7 +100,7 @@
       "id": 13,
       "title": "Flex",
       "description": "A student performance tracking system that uses the LeetCode API to fetch and display coding progress and statistics based on username. Integrates web and Python technologies for dynamic layouts, scripting utilities, and real-time data visualization.",
-      "technologies": ["JavaScript", "CSS", "Django", "HTML", "SCSS"],
+      "technologies": ["Django", "JavaScript", "HTML", "CSS", "SCSS"],
       "github": "https://github.com/HarshaVardhanRao/Flex",
       "liveDemo": "#"
     },
