@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -456,9 +456,13 @@ button:hover {
   width: 100%;
   padding: 80px 5% 40px 5%;
   color: #fff;
-  background: linear-gradient(135deg, rgba(98,98,255,0.03) 0%, rgba(0,0,0,0.95) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(98, 98, 255, 0.03) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
   border-radius: 24px;
-  box-shadow: 0 4px 32px 0 rgba(98,98,255,0.08);
+  box-shadow: 0 4px 32px 0 rgba(98, 98, 255, 0.08);
   margin-bottom: 40px;
   position: relative;
   display: flex;
@@ -536,25 +540,29 @@ button:hover {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-sizing: border-box;
   margin: clamp(8px, 1.5vw, 12px) auto;
-  box-shadow: 
-    0 4px 20px rgba(98, 98, 255, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(98, 98, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .project_sec:hover {
   border: 2px solid var(--main-color);
   border-radius: 16px;
-  box-shadow: 
-    0 8px 35px rgba(98, 98, 255, 0.25),
-    0 0 0 1px rgba(98, 98, 255, 0.1),
-    inset 0 1px 0 rgba(98, 98, 255, 0.2);
+  box-shadow: 0 8px 35px rgba(98, 98, 255, 0.25),
+    0 0 0 1px rgba(98, 98, 255, 0.1), inset 0 1px 0 rgba(98, 98, 255, 0.2);
   transform: translateY(-3px);
-  background: linear-gradient(145deg, rgba(98, 98, 255, 0.06) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(98, 98, 255, 0.06) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   z-index: 5;
 }
 
@@ -608,7 +616,7 @@ button:hover {
   min-height: 50px;
   max-height: 50px;
   overflow: auto;
-    scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   align-content: flex-start;
   justify-content: flex-start;
@@ -639,13 +647,17 @@ button:hover {
 }
 
 .project_sec::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, transparent 0%, rgba(98, 98, 255, 0.08) 100%);
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(98, 98, 255, 0.08) 100%
+  );
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
@@ -690,7 +702,6 @@ button:hover {
   margin: 0;
 }
 
-  
 .project-link {
   display: inline-flex;
   align-items: center;
@@ -713,7 +724,8 @@ button:hover {
   box-shadow: 0 2px 8px rgba(98, 98, 255, 0.1);
 }
 
-.project-link:hover, .project-link:focus {
+.project-link:hover,
+.project-link:focus {
   background: linear-gradient(135deg, var(--main-color) 0%, #4a4aff 100%);
   color: #000;
   text-decoration: none;
@@ -722,7 +734,8 @@ button:hover {
   transform: translateY(-1px);
   border-color: var(--main-color);
 }
-.project-link:hover i, .project-link:focus i {
+.project-link:hover i,
+.project-link:focus i {
   color: #000;
   transition: color 0.3s;
 }
@@ -747,7 +760,11 @@ button:hover {
   min-width: 44px;
   min-height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
   border: 2px solid var(--main-color);
   color: var(--main-color);
   font-size: clamp(1.2rem, 2vw, 1.4rem);
@@ -756,9 +773,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 
-    0 4px 15px rgba(98, 98, 255, 0.2),
-    0 2px 6px rgba(0, 0, 0, 0.3),
+  box-shadow: 0 4px 15px rgba(98, 98, 255, 0.2), 0 2px 6px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(98, 98, 255, 0.1);
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   outline: none;
@@ -766,13 +781,13 @@ button:hover {
   touch-action: manipulation;
   user-select: none;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 }
 
 .swiper-nav-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -786,13 +801,17 @@ button:hover {
 }
 
 .swiper-nav-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
   border-radius: 8px;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -805,26 +824,23 @@ button:hover {
 }
 
 .swiper-nav-btn:hover::after {
-  opacity: 1;
+  opacity: 0.9;
 }
 
-.swiper-nav-btn:hover, .swiper-nav-btn:focus {
+.swiper-nav-btn:hover,
+.swiper-nav-btn:focus {
   color: #000;
   border-color: var(--main-color);
   background: linear-gradient(135deg, var(--main-color) 0%, #4a4aff 100%);
-  box-shadow: 
-    0 4px 20px rgba(98, 98, 255, 0.3),
-    0 0 0 2px rgba(98, 98, 255, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(98, 98, 255, 0.3),
+    0 0 0 2px rgba(98, 98, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
 
 .swiper-nav-btn:active {
   transform: translateY(-1px);
-  box-shadow: 
-    0 2px 12px rgba(98, 98, 255, 0.25),
-    0 0 0 1px rgba(98, 98, 255, 0.15),
-    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(98, 98, 255, 0.25),
+    0 0 0 1px rgba(98, 98, 255, 0.15), inset 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease;
 }
 
@@ -859,18 +875,18 @@ button:hover {
     padding: 18px 0 0 0;
     max-width: 280px;
   }
-  
+
   .swiper-nav-btn {
     width: clamp(48px, 5.5vw, 52px);
     height: clamp(48px, 5.5vw, 52px);
     font-size: clamp(1.1rem, 1.8vw, 1.3rem);
     border-radius: 10px;
   }
-  
+
   .swiper-nav-btn::before {
     border-radius: 8px;
   }
-  
+
   .swiper-nav-btn::after {
     border-radius: 6px;
   }
@@ -880,11 +896,11 @@ button:hover {
   .swiper {
     padding: 15px 0 40px 0;
   }
-  
+
   .swiper-wrapper {
     padding: 15px 0;
   }
-  
+
   .project_sec {
     max-width: 95%;
     margin: 8px auto;
@@ -893,53 +909,55 @@ button:hover {
     min-height: 420px;
     max-height: 460px;
   }
-  
+
   .project_sec h4 {
     font-size: clamp(18px, 3vw, 20px);
     margin-bottom: clamp(10px, 2vw, 12px);
   }
-  
+
   .project_sec p {
-    font-size: clamp(13px, 2.2vw, 15px);
+    /* font-size: clamp(13px, 2.2vw, 15px);
     min-height: 5.2em;
     max-height: 5.2em;
     -webkit-line-clamp: 3;
     line-clamp: 3;
-    margin-bottom: clamp(14px, 2vw, 16px);
+    margin-bottom: clamp(14px, 2vw, 16px); */
+    display: none !important;
   }
-  
+
   .project_tech {
     min-height: clamp(45px, 7vw, 55px);
     max-height: clamp(45px, 7vw, 55px);
     margin-bottom: clamp(14px, 2vw, 16px);
   }
-  
+
   .tech-tag {
     font-size: clamp(9px, 1.8vw, 11px);
     padding: clamp(3px, 0.8vw, 5px) clamp(6px, 1.2vw, 8px);
   }
-  
+
   .project-link {
     font-size: clamp(12px, 2vw, 14px);
     padding: clamp(6px, 1vw, 8px) clamp(10px, 1.8vw, 12px);
     min-height: 32px;
   }
-  
+
   .swiper-nav-btns-row {
     gap: clamp(16px, 4vw, 22px);
     margin: 24px auto 0 auto;
     padding: 16px 0 0 0;
     max-width: 240px;
   }
-  
+
   .swiper-nav-btn {
     width: 46px;
     height: 46px;
     font-size: 1.1rem;
     border-radius: 8px;
   }
-  
-  .swiper-nav-btn:hover, .swiper-nav-btn:focus {
+
+  .swiper-nav-btn:hover,
+  .swiper-nav-btn:focus {
     transform: translateY(-1px);
   }
 }
@@ -949,15 +967,15 @@ button:hover {
     padding: 40px 2% 30px 2%;
     border-radius: 16px;
   }
-  
+
   .swiper {
     padding: 10px 0 30px 0;
   }
-  
+
   .swiper-wrapper {
     padding: 10px 0;
   }
-  
+
   .project_sec {
     max-width: 98%;
     margin: 5px auto;
@@ -967,45 +985,46 @@ button:hover {
     min-height: 380px;
     max-height: 420px;
   }
-  
+
   .project_sec h4 {
     font-size: clamp(16px, 3.5vw, 18px);
     margin-bottom: clamp(8px, 1.5vw, 10px);
   }
-  
+
   .project_sec p {
-    font-size: clamp(12px, 2.5vw, 14px);
+    /* font-size: clamp(12px, 2.5vw, 14px);
     min-height: 4.8em;
     max-height: 4.8em;
     -webkit-line-clamp: 3;
     line-clamp: 3;
-    margin-bottom: clamp(12px, 2vw, 14px);
+    margin-bottom: clamp(12px, 2vw, 14px); */
+    display: none !important;
   }
-  
+
   .project_tech {
     min-height: clamp(40px, 6vw, 50px);
     max-height: clamp(40px, 6vw, 50px);
     margin-bottom: clamp(12px, 2vw, 14px);
   }
-  
+
   .tech-tag {
     font-size: clamp(8px, 1.5vw, 10px);
     padding: clamp(2px, 0.5vw, 4px) clamp(5px, 1vw, 7px);
   }
-  
+
   .project-link {
     font-size: clamp(11px, 2.2vw, 13px);
     padding: clamp(5px, 1vw, 7px) clamp(8px, 1.5vw, 10px);
     min-height: 28px;
   }
-  
+
   .swiper-nav-btns-row {
     gap: 18px;
     margin: 20px auto 0 auto;
     padding: 12px 0 0 0;
     max-width: 180px;
   }
-  
+
   .swiper-nav-btn {
     width: 44px;
     height: 44px;
@@ -1015,19 +1034,19 @@ button:hover {
     border-radius: 8px;
     border-width: 1.5px;
   }
-  
+
   .swiper-nav-btn::before {
     border-radius: 6px;
   }
-  
+
   .swiper-nav-btn::after {
     border-radius: 4px;
   }
-  
-  .swiper-nav-btn:hover, .swiper-nav-btn:focus {
+
+  .swiper-nav-btn:hover,
+  .swiper-nav-btn:focus {
     transform: scale(1.02);
-    box-shadow: 
-      0 4px 18px rgba(98, 98, 255, 0.35),
+    box-shadow: 0 4px 18px rgba(98, 98, 255, 0.35),
       0 0 0 2px rgba(98, 98, 255, 0.15);
   }
 }
@@ -1038,7 +1057,7 @@ button:hover {
     margin: 16px auto 0 auto;
     max-width: 140px;
   }
-  
+
   .swiper-nav-btn {
     width: 40px;
     height: 40px;
@@ -1047,11 +1066,11 @@ button:hover {
     font-size: 0.9rem;
     border-radius: 6px;
   }
-  
+
   .swiper-nav-btn::before {
     border-radius: 4px;
   }
-  
+
   .swiper-nav-btn::after {
     border-radius: 2px;
   }
@@ -1065,8 +1084,9 @@ button:hover {
     background: #000;
     color: var(--main-color);
   }
-  
-  .swiper-nav-btn:hover, .swiper-nav-btn:focus {
+
+  .swiper-nav-btn:hover,
+  .swiper-nav-btn:focus {
     background: var(--main-color);
     color: #000;
     border-color: #fff;
@@ -1078,24 +1098,25 @@ button:hover {
   .swiper-nav-btn {
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   }
-  
+
   .swiper-nav-btn::before,
   .swiper-nav-btn::after {
     transition: opacity 0.2s;
   }
-  
-  .swiper-nav-btn:hover, .swiper-nav-btn:focus {
+
+  .swiper-nav-btn:hover,
+  .swiper-nav-btn:focus {
     transform: none;
   }
-  
+
   .swiper-nav-btn:active {
     transform: none;
   }
-  
+
   .swiper-nav-btn i {
     transition: none;
   }
-  
+
   .swiper-nav-btn:hover i {
     transform: none;
   }
@@ -1110,7 +1131,11 @@ button:hover {
   color: #fff;
   width: 100%;
   padding: 80px 5%;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(98, 98, 255, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(98, 98, 255, 0.05) 100%
+  );
 }
 
 .contact h2 {
@@ -1190,40 +1215,41 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 18px;
-  box-shadow: 0 4px 32px 0 rgba(98,98,255,0.10), 0 1.5px 8px 0 rgba(98,98,255,0.08);
+  box-shadow: 0 4px 32px 0 rgba(98, 98, 255, 0.1),
+    0 1.5px 8px 0 rgba(98, 98, 255, 0.08);
   padding: 32px 24px;
   position: relative;
   transition: box-shadow 0.3s;
 }
 
 .contact_form:focus-within {
-  box-shadow: 0 8px 40px 0 rgba(98,98,255,0.18), 0 2px 12px 0 rgba(98,98,255,0.12);
+  box-shadow: 0 8px 40px 0 rgba(98, 98, 255, 0.18),
+    0 2px 12px 0 rgba(98, 98, 255, 0.12);
 }
-
 
 .contact_form input,
 .contact_form textarea {
   width: 100%;
   height: 50px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid rgba(98,98,255,0.18);
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(98, 98, 255, 0.18);
   border-radius: 12px;
   padding: 15px 18px;
   color: #fff;
   font-size: clamp(15px, 1.7vw, 17px);
   transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
   backdrop-filter: blur(10px);
-  box-shadow: 0 1.5px 8px 0 rgba(98,98,255,0.08);
+  box-shadow: 0 1.5px 8px 0 rgba(98, 98, 255, 0.08);
 }
 
 .contact_form input:focus,
 .contact_form textarea:focus {
   outline: none;
   border-color: var(--main-color);
-  background: rgba(98,98,255,0.08);
-  box-shadow: 0 0 0 2px var(--main-color), 0 2px 12px 0 rgba(98,98,255,0.12);
+  background: rgba(98, 98, 255, 0.08);
+  box-shadow: 0 0 0 2px var(--main-color), 0 2px 12px 0 rgba(98, 98, 255, 0.12);
 }
 
 .contact_form input::placeholder,
@@ -1241,7 +1267,6 @@ button:hover {
   max-height: 200px;
 }
 
-
 .contact_form button {
   width: 100%;
   max-width: 220px;
@@ -1256,7 +1281,7 @@ button:hover {
   transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
   align-self: center;
   margin-top: 10px;
-  box-shadow: 0 2px 12px 0 rgba(98,98,255,0.10);
+  box-shadow: 0 2px 12px 0 rgba(98, 98, 255, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -1264,7 +1289,7 @@ button:hover {
 .contact_form button:hover {
   background: linear-gradient(135deg, #4a4aff 0%, var(--main-color) 100%);
   transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 10px 32px 0 rgba(98,98,255,0.18);
+  box-shadow: 0 10px 32px 0 rgba(98, 98, 255, 0.18);
 }
 
 /* Success/Error notification for contact form */
@@ -1278,7 +1303,7 @@ button:hover {
   background: rgba(98, 255, 98, 0.08);
   color: #2ecc40;
   border: 1.5px solid #2ecc40;
-  box-shadow: 0 1.5px 8px 0 rgba(46,204,64,0.08);
+  box-shadow: 0 1.5px 8px 0 rgba(46, 204, 64, 0.08);
   display: none;
 }
 .contact_form .form-message.error {
@@ -1479,8 +1504,15 @@ footer p span {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     line-clamp: 4;
-    overflow: hidden;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
   }
+
+  .project_sec p::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
   .tech-tag {
     font-size: clamp(10px, 1.1vw, 11px);
     padding: 4px 10px;
@@ -1497,7 +1529,7 @@ footer p span {
     cursor: pointer;
     z-index: 1001;
   }
-  
+
   nav {
     position: absolute;
     top: 100%;
@@ -1513,7 +1545,7 @@ footer p span {
     border-radius: 0 0 15px 15px;
     border: 2px solid transparent;
   }
-  
+
   nav p {
     color: #fff;
     padding: 15px 0;
@@ -1531,7 +1563,7 @@ footer p span {
   .logo h2 {
     font-size: clamp(22px, 4vw, 28px);
   }
-  
+
   .show {
     height: 350px;
     padding: 30px;
@@ -1540,21 +1572,21 @@ footer p span {
     -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 10px 30px rgba(98, 98, 255, 0.2);
   }
-  
+
   /* Header opacity reduction when nav is active */
   header.nav-active {
     background: rgba(0, 0, 0, 0.8);
   }
-  
+
   .contact_container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .contact_detail {
     order: 2;
   }
-  
+
   .contact_form {
     order: 1;
   }
@@ -1596,7 +1628,7 @@ footer p span {
     max-width: 350px;
     width: 100%;
     padding: 12px;
-    box-shadow: 0 2px 12px 0 rgba(98,98,255,0.10);
+    box-shadow: 0 2px 12px 0 rgba(98, 98, 255, 0.1);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1609,7 +1641,7 @@ footer p span {
     line-height: 1.3;
   }
   .project_sec p {
-    font-size: clamp(14px, 2.2vw, 15px);
+    /* font-size: clamp(14px, 2.2vw, 15px);
     line-height: 1.7;
     margin-bottom: 15px;
     min-height: 6.8em;
@@ -1618,7 +1650,8 @@ footer p span {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     line-clamp: 4;
-    overflow: hidden;
+    overflow: hidden; */
+    display: none !important;
   }
   .project_tech {
     margin-bottom: 12px;
@@ -1629,7 +1662,7 @@ footer p span {
     padding: 4px 9px;
   }
   .project-link {
-    font-size: clamp(12px, 2.0vw, 13px);
+    font-size: clamp(12px, 2vw, 13px);
     padding: 8px 11px;
     gap: 6px;
   }
@@ -1677,14 +1710,14 @@ footer p span {
     font-size: 13px;
     opacity: 0.8;
   }
-  
+
   .project_sec {
     min-height: 180px;
     height: 180px;
     max-width: 320px;
     width: 100%;
     padding: 8px;
-    box-shadow: 0 1.5px 8px 0 rgba(98,98,255,0.08);
+    box-shadow: 0 1.5px 8px 0 rgba(98, 98, 255, 0.08);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1733,20 +1766,20 @@ footer p span {
 /* Large screen optimizations */
 @media (min-width: 1400px) {
   .project_sec h4 {
-    font-size: clamp(26px, 2.0vw, 30px);
+    font-size: clamp(26px, 2vw, 30px);
     line-height: 1.3;
   }
-  
+
   .project_sec p {
     font-size: clamp(17px, 1.4vw, 19px);
     line-height: 1.7;
   }
-  
+
   .tech-tag {
-    font-size: clamp(13px, 1.0vw, 15px);
+    font-size: clamp(13px, 1vw, 15px);
     padding: 6px 15px;
   }
-  
+
   .project-link {
     font-size: clamp(15px, 1.1vw, 17px);
     padding: 12px 19px;
